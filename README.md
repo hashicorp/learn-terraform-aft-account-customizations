@@ -60,7 +60,7 @@ CLI or performing additional/custom Bash scripting.
 
 Sample #1 - Using AWS CLI to query for resources, save to a variable, and then
 pass to a script. In the example below, all running instances are queried,
-stopped, and started using AWS CLI and custom Python scritpts.
+stopped, and started using AWS CLI and custom Python scripts.
 
 ```
 instances=$(aws ec2 describe-instances --filters "Name=instance-state-name,Values=running")
