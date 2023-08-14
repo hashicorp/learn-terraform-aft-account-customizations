@@ -22,6 +22,7 @@ module "aws_oidc_github" {
   attach_read_only_policy = false
   create_oidc_provider    = true
   iam_role_name           = "aws-oidc-github"
+  enterprise_slug         = "ecomi"
   max_session_duration    = 3600
   github_repositories = [
     "veve-official/infrastructure-aft",
