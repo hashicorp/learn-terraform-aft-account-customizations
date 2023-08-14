@@ -20,6 +20,7 @@ terraform {
         organization = "{{ terraform_org_name }}"
         workspaces {
         name = "{{ terraform_workspace_name }}"
+        tags = ["service:aft"]
         }
     }
 }
