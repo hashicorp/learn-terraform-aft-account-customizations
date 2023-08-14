@@ -23,10 +23,6 @@ module "aws_oidc_github" {
   create_oidc_provider    = true
   iam_role_name           = "aws-oidc-github"
   max_session_duration    = 3600
-  github_repositories = [
-    "VeVe-Official/infrastructure-aft",
-    "VeVe-Official/infrastructure-elasticache"
-  ]
-
-  tags = local.tags
+  github_repositories     = local.gh_repo_list
+  tags                    = local.tags
 }

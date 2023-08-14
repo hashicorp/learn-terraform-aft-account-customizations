@@ -9,7 +9,7 @@ locals {
     Team        = "platform"
     Schedule    = "na"
     Tier        = "backend"
-    Environment = "development"
-    Stage       = "development"
+    Environment = "pre-production"
+    Stage       = "pre-production"
   }
 }

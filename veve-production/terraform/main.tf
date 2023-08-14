@@ -10,6 +10,7 @@ module "terraform_cloud_oidc" {
   iam_role_name        = "terraform-cloud-oidc"
   max_session_duration = 3600
   url                  = "app.terraform.io"
+  tags                 = local.tags
 }
 
 module "aws_oidc_github" {
@@ -21,9 +22,6 @@ module "aws_oidc_github" {
   create_oidc_provider = true
   iam_role_name        = "aws-oidc-github"
   max_session_duration = 3600
-  iam_role_policy_arns = []
-  github_repositories = [
-    "veve-official/infrastructure-aft",
-    "veve-official/infrastructure-elasticache"
-  ]
+  github_repositories  = local.gh_repo_list
+  tags                 = local.tags
 }

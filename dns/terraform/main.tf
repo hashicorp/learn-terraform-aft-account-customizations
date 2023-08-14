@@ -21,8 +21,5 @@ module "aws_oidc_github" {
   create_oidc_provider = true
   iam_role_name        = "aws-oidc-github"
   max_session_duration = 3600
-  iam_role_policy_arns = []
-  github_repositories = [
-    "veve-official/infrastructure-aft"
-  ]
+  github_repositories  = local.gh_repo_list
 }
