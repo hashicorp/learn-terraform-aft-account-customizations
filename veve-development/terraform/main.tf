@@ -23,6 +23,7 @@ module "aws_oidc_github" {
   max_session_duration = 3600
   iam_role_policy_arns = []
   github_repositories = [
-    "veve-official/infrastructure-aft"
+    "veve-official/infrastructure-aft",
+    "veve-official/infrastructure-elasticache"
   ]
 }
