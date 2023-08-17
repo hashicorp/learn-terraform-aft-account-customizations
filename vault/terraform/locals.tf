@@ -1,5 +1,6 @@
 locals {
-  gh_org_name = "VeVe-Official"
+  cloudcraft_aws_account_id = "968898580625"
+  gh_org_name               = "VeVe-Official"
   gh_repo_list = [
     "${local.gh_org_name}/infrastructure-aft",
     "${local.gh_org_name}/infrastructure-elasticache",
